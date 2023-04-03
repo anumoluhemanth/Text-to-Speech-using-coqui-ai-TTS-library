@@ -1,0 +1,25 @@
+Requirements:
+Python version--3.8 (for windows)
+pip (package manager)
+espeak-ng
+
+Steps to run the library:
+Step 1: create a python virtual env (python -m venv .)
+Step 2: Activate the venv (cd Script, ./activate)
+Step 3: update the wheel (pip list, pip install pip setuptools wheel -U)
+Step-4: Install TTS library
+pip install TTS==0.8.0
+Step-5: Install pyworld
+pip install pyworld==0.3.0
+Step-6: check TTS installation 
+tts-server --list_models
+
+play with the library:
+converts the text to audio using the default model
+tts --text "Hello world"
+
+creates a local web interface to interact and convert the text to audio
+tts-server --model_name tts_models/en/ljspeech/tacotron2-DDC
+
+
+
